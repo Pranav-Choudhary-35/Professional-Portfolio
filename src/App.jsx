@@ -2,8 +2,9 @@ import { useState } from 'react'
 import './app.scss'
 import Nav from './components/Nav'
 import Docs from './components/Docs'
-import MacWindows from './components/Windows/MacWindows'
+import MacWindows from "./components/Windows/MacWindows";
 import Github from './components/Windows/Github'
+import Note from './components/Windows/Note'
 function App() {
   return (
    <>
@@ -11,6 +12,7 @@ function App() {
   <Nav/>
   <Docs/>
  <Github/>
+ <Note/>
 </main>
    </>
   )
