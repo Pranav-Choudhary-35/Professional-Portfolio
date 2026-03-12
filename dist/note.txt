@@ -1,0 +1,47 @@
+/**
+ * @file: profile.config.ts
+ * @author: Pranav Choudhary
+ * @summary: A high-performance full-stack engineer.
+ */
+
+// --------------------------------------------------
+// 1. CORE DEPENDENCIES & SKILLS
+// --------------------------------------------------
+
+const TECH_STACK = {
+  frontend: [
+    "React.js",    // 100%
+    "CSS",     // 95%
+    "CSS", // 90%
+  ],
+  backend: [
+    "Node.js + Express.js",     // 90%
+    "SQL",         // 60%
+    "Mongo DB",    //90%
+    "EJS",     // 80%
+  ],
+  tools: ["Git", "GitHub", "Linux"]
+};
+
+// --------------------------------------------------
+// 2. ACADEMIC BACKGROUND
+// --------------------------------------------------
+
+const education = new Map<string, string>([
+  ["10th CBSE", "(6.4 GPA)"]
+  ["12th HP Board", "Non-Medical (7.2 GPA)"],
+  ["Graduation HPTU ", "B.Tech Computer Science  (7.5 CGPA)"]
+]);
+
+export default new ProfessionalHistory();
+
+
+```bash
+# TERMINAL OUTPUT
+# ---------------------------------------
+$ user --status
+> Status: Open to Opportunities
+> Location: Global / Remote
+> Loading Assets... [||||||||||] 100%
+> Ready.
+```
