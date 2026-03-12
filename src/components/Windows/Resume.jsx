@@ -1,5 +1,5 @@
 import React from 'react'
-import MacWindows from './MacWindows'
+import MacWindows from './MacWindow'
 import "./resume.scss"
 
 const Resume = ({ windowName, setWindowsState }) => {

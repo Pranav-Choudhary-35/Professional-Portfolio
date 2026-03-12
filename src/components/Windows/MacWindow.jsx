@@ -1,8 +1,8 @@
 import React from 'react'
 import { Rnd } from 'react-rnd'
-import "./macwindows.scss"
+import "./window.scss"
 
-const MacWindows = ({ children, width = "40vw", height = "40vh", windowName, setWindowsState }) => {
+const MacWindow = ({ children, width = "40vw", height = "40vh", windowName, setWindowsState }) => {
     return (
         <Rnd
             default={{
@@ -31,4 +31,4 @@ const MacWindows = ({ children, width = "40vw", height = "40vh", windowName, set
     )
 }
 
-export default MacWindows
+export default MacWindow

@@ -1,6 +1,6 @@
 import React from 'react'
 import githubData from "../../assets/github.json"
-import MacWindows from './MacWindows'
+import MacWindow from './MacWindow'
 import "./github.scss"
 
 const GitCard = ({ data = { id: 1, image: "", title: "", description: "", tags: [], repoLink: "", demoLink: "" } }) => {
@@ -10,12 +10,11 @@ const GitCard = ({ data = { id: 1, image: "", title: "", description: "", tags: 
         <h1>{data.title}</h1>
         <p className='description' >{data.description}</p>
 
-    <div className="tags">
-  {data.tags.map((tag, index) => (
-    <p key={index} className="tag">{tag}</p>
-  ))}
-</div>
-
+        <div className="tags">
+            {
+                data.tags.map(tag => <p className='tag' >{tag}</p>)
+            }
+        </div>
 
         <div className="urls">
             <a href={data.repoLink}>Repository</a>
@@ -27,14 +26,13 @@ const GitCard = ({ data = { id: 1, image: "", title: "", description: "", tags: 
 
 const Github = ({ windowName, setWindowsState }) => {
     return (
-        <MacWindows windowName={windowName} setWindowsState={setWindowsState} >
+        <MacWindow windowName={windowName} setWindowsState={setWindowsState} >
             <div className="cards">
-                {githubData.map((project, index) => (
-  <GitCard key={index} data={project} />
-))
-}
+                {githubData.map(project => {
+                    return <GitCard data={project} />
+                })}
             </div>
-        </MacWindows>
+        </MacWindow>
     )
 }
 
